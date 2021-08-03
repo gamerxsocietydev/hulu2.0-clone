@@ -23,8 +23,8 @@ export default function Header() {
       <Image
         className="object-contain"
         src="/Gamer X Society Website Layout-4.png"
-        width={200}
-        height={100}
+        width={400}
+        height={200}
       />
     </header>
   )
