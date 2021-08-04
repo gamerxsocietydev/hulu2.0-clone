@@ -26,12 +26,13 @@ function RewardsPage() {
                 {reward.category}
               </div>
 
-              <div className="text-xl">{reward.display_name}</div>
+              <div className="text-2xl">{reward.display_name}</div>
               {/* <img src={reward.image_url} layout="responsive" height="400" width="400" /> */}
               <video
                 layout="responsive"
-                height="400"
-                width="99%"
+                height="50%"
+                width="95%"
+                poster="/images/nike logo.png"
                 controls
                 autoplay
               >
@@ -59,7 +60,7 @@ function RewardsPage() {
                 {reward.point_cost} points to unlock
               </button>
               <div>{reward.description}</div>
-              <hr className="border-2 border-gray-800 w-1/2 h-1 mt-3" />
+              <hr className="border-2 border-gray-800 w-11/12 h-1 m-10" />
             </div>
           </div>
         )
