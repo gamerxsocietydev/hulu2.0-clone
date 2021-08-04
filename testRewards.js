@@ -1,0 +1,51 @@
+export const rewards = [
+  {
+    id: '062d6131-eba9-46c9-89df-5371c1e579e6',
+    display_name: '50% Off Jackets',
+    description:
+      'All Jackets are 50% for GamerXSociety members. Present promo code and receive the benefit during your next visit',
+    category: 'apparel',
+    image_url:
+      'https://2rdnmg1qbg403gumla1v9i2h-wpengine.netdna-ssl.com/wp-content/uploads/sites/3/2019/06/cropped-GettyImages-643764514-745x490.jpg',
+    purchasable: true,
+    point_cost: 50,
+    unlocked: false,
+    redeemed: false,
+    expiration_date: null,
+    unlocked_count: '0',
+    redeemed_code_count: '0',
+    total_code_count: '0',
+  },
+  {
+    id: '7361b777-79cf-4446-98ac-b7db34e42e73',
+    display_name: '30% Off Shoes',
+    description: '',
+    category: 'apparel',
+    image_url:
+      'https://2rdnmg1qbg403gumla1v9i2h-wpengine.netdna-ssl.com/wp-content/uploads/sites/3/2019/06/cropped-GettyImages-643764514-745x490.jpg',
+    purchasable: true,
+    point_cost: 10000,
+    unlocked: false,
+    redeemed: false,
+    expiration_date: null,
+    unlocked_count: '0',
+    redeemed_code_count: '0',
+    total_code_count: '0',
+  },
+  {
+    id: '41c16f7d-79fd-4a63-b5f6-b71b2b3fb7f9',
+    display_name: 'Free Wine Bottle',
+    description: '',
+    category: 'food',
+    image_url:
+      'https://2rdnmg1qbg403gumla1v9i2h-wpengine.netdna-ssl.com/wp-content/uploads/sites/3/2019/06/cropped-GettyImages-643764514-745x490.jpg',
+    purchasable: true,
+    point_cost: 1000,
+    unlocked: false,
+    redeemed: false,
+    expiration_date: null,
+    unlocked_count: '0',
+    redeemed_code_count: '0',
+    total_code_count: '0',
+  },
+]
