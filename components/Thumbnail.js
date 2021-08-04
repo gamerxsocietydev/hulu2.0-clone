@@ -13,19 +13,15 @@ const Thumbnail = forwardRef(({ result }, ref) => {
       ref={ref}
       className="group cursor-pointer p-2 transition duration-200 ease-in transform sm:hover:scale-105 sm:hover:z-50"
     >
-      {/* <Image src={`${BASE_URL}${result.backdrop_path || result.poster_path}` || 
-                        `${BASE_URL}${result.poster_path}`
-                        } 
-                layout="responsive"
-                height={1080}
-                width={1920}
-            /> */}
-      <video controls width="640" height="360" layout="responsive">
-        <source
-          src="/images/Call of Duty®_ Modern Warfare® & Warzone™ - Official Season Six Trailer.mp4"
-          type="video/mp4"
-        />
-      </video>
+      <Image
+        src={
+          `${BASE_URL}${result.backdrop_path || result.poster_path}` ||
+          `${BASE_URL}${result.poster_path}`
+        }
+        layout="responsive"
+        height={1080}
+        width={1920}
+      />
 
       <div className="p-2 ">
         <p className="truncate max-w-md">{result.overview}</p>

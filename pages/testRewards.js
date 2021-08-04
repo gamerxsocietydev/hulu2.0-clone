@@ -42,7 +42,6 @@ function RewardsPage() {
                 />
               </video>
               <button className="flex justify-center items-center border-yellow-500 border-2 rounded-lg bg-yellow-500 text-white mt-1 md:text-xl w-1/2">
-                {' '}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"

@@ -8,6 +8,7 @@ import {
   SearchIcon,
   UserIcon,
 } from '@heroicons/react/outline'
+import Link from 'next/link'
 
 export default function Header() {
   return (
@@ -20,12 +21,14 @@ export default function Header() {
         <HeaderItem title="Search" Icon={SearchIcon} />
         <HeaderItem title="Profile" Icon={UserIcon} />
       </div>
-      <Image
-        className="object-contain"
-        src="/Gamer X Society Website Layout-4.png"
-        width={400}
-        height={200}
-      />
+      <Link href="/testRewards">
+        <Image
+          className="object-contain"
+          src="/Gamer X Society Website Layout-4.png"
+          width={400}
+          height={200}
+        />
+      </Link>
     </header>
   )
 }

@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useUser } from '../lib/hooks'
 import requests from '../utils/requests'
@@ -14,7 +13,7 @@ export default function Navbar() {
 
   return (
     <nav className="relative">
-      <div className="flex px-10 sm:px-20 text-2xl space-x-10 sm:space-x-20 whitespace-nowrap overflow-x-scroll scrollbar-hide">
+      <div className="flex px-10 sm:px-20 text-2xl space-x-10 sm:space-x-20 whitespace-nowrap overflow-x-scroll scrollbar-hide ">
         {Object.entries(requests).map(([key, { title, url }]) => (
           <h2
             key={key}
