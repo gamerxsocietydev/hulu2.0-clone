@@ -19,9 +19,9 @@ function RewardsPage() {
         return (
           <div
             key={reward.id}
-            className="grid justify-center sm:grid sm:w-screen md:grid-cols-2 "
+            className=" flex flex-col items-center sm:w-screen md:w-2/3 "
           >
-            <div className=" flex flex-col items-center  ">
+            <div className=" flex flex-col justify-center items-center  ">
               <div className="border-2 rounded-xl p-1 text-xs m-1 bg-gray-600 border-yellow-500">
                 {reward.category}
               </div>
@@ -41,7 +41,7 @@ function RewardsPage() {
                   type="video/mp4"
                 />
               </video>
-              <button className="flex border-yellow-500 border-2 rounded-lg bg-yellow-500 text-white mt-1">
+              <button className="flex justify-center items-center border-yellow-500 border-2 rounded-lg bg-yellow-500 text-white mt-1 md:text-xl w-1/2">
                 {' '}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ function RewardsPage() {
                 {reward.point_cost} points to unlock
               </button>
               <div>{reward.description}</div>
-              <hr className="border-2 border-gray-800 w-11/12 h-1 m-10" />
+              <hr className="border-2 border-gray-800 w-11/12 h-1 m-10 " />
             </div>
           </div>
         )
