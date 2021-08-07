@@ -22,28 +22,6 @@ import * as gtag from '../lib/gtag'
 import { useUser, fetcher } from '../lib/hooks'
 import styles from '../styles/Home.module.css'
 
-import api from 'steam-js-api'
-
-api.setKey('76561198099490962')
-
-const steamID = '76561198099490962' // My Steam ID, feel free to use it for testing :)
-const appID = 730 // We only want to check for one game
-const moreInfo = true // Provide more info (name, links)
-
-// With a callback
-api.getOwnedGames(steamID, appID, moreInfo, (result) => {
-  if (result.error) console.error(result.error)
-  else console.log(result.data.games[0])
-})
-
-// Alternatively, use a Promise
-api
-  .getOwnedGames(steamID, appID, moreInfo)
-  .then((result) => {
-    console.log(result.data.games[0])
-  })
-  .catch(console.error)
-
 const createHandler = (endpoint, setErrorMsg, updateRewardState) => {
   return async function (e) {
     e.preventDefault()
