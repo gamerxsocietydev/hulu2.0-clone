@@ -18,7 +18,7 @@ import Typography from '@material-ui/core/Typography'
 import ButtonBase from '@material-ui/core/ButtonBase'
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined'
 
-//ENV variables updated in local file
+//ENV variables updated in local file and disconnected git repo
 import * as gtag from '../lib/gtag'
 import { useUser, fetcher } from '../lib/hooks'
 import styles from '../styles/Home.module.css'
