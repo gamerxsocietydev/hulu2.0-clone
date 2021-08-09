@@ -143,14 +143,15 @@ function RewardList({ mutateUser, user }) {
                   <hr className="border-2 border-gray-800 w-11/12 h-1 m-10 " />
                 </div>
               </div>
-              {/*  <p> {reward.display_name}</p>
-           <p> {reward.catetory}</p>
-           <p> {reward.description}</p>
-          <p> {reward.point_cost} rewards points</p> */}
-              {/* <pre>{JSON.stringify(reward, null, 2)}</pre> */}
 
               {user && (
                 <>
+                  <p> {reward.display_name}</p>
+                  <p> {reward.catetory}</p>
+                  <p> {reward.description}</p>
+                  <p> {reward.point_cost} rewards points</p>
+
+                  {/* <pre>{JSON.stringify(reward, null, 2)}</pre> */}
                   {!reward.unlocked && (
                     <a href="#" onClick={onUnlock} name={reward.id}>
                       <Button variant="contained" color="primary">
